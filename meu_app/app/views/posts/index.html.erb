@@ -11,6 +11,9 @@
       <%= link_to "Show this post", post %>
     </p>
   <% end %>
+
+  <%= link_to "Comment", redirect_to Something_path, method: :get %>
+
 </div>
 
 <%= link_to "New post", new_post_path %>

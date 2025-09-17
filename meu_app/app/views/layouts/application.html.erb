@@ -23,6 +23,13 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <% if admin_signed_in?%>
+    <%= render 'layouts/navbar'  %>
+    <% end%>
+
+    <main class="container mx-auto mt-28 px-5 flex">
+      <%= yield %>
+    </main>
   </body>
 </html>

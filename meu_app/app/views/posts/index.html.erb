@@ -4,6 +4,7 @@
 
 <h1>Posts</h1>
 
+
 <div id="posts">
   <% @posts.each do |post| %>
     <%= render post %>
@@ -12,8 +13,12 @@
     </p>
   <% end %>
 
+<<<<<<< HEAD
   <%= link_to "Comment", redirect_to Something_path, method: :get %>
 
+=======
+  <%= link_to "Comments", comments_path %>
+>>>>>>> upstream/main
 </div>
 
 <%= link_to "New post", new_post_path %>

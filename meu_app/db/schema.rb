@@ -10,12 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema[8.0].define(version: 2025_09_01_130058) do
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "pg_catalog.plpgsql"
-
-=======
 ActiveRecord::Schema[8.0].define(version: 2025_09_08_150149) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
@@ -32,7 +26,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_09_08_150149) do
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
   end
 
->>>>>>> upstream/main
   create_table "comments", force: :cascade do |t|
     t.text "content"
     t.bigint "post_id", null: false
